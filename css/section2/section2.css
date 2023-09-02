@@ -1,0 +1,124 @@
+:root {
+    --bg-color: rgb(153, 0, 0);
+    --bg-transp: rgba(255, 89, 0, 0.616);
+    --bg-scrolltumb: rgb(212, 217, 37);
+}
+
+.section2__h2 {
+    font-size: 28pt;
+}
+
+.section__contCarta {
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.section__contCarta::-webkit-scrollbar {
+    background-color: var(--bg-color);
+}
+
+.section__contCarta::-webkit-scrollbar-thumb {
+    background-color: var(--bg-scrolltumb);
+}
+
+.section2__contProdsI {
+    width: 100%;
+    height: 25vh;
+    border: 1px solid var(--bg-color);
+    display: grid;
+    grid-template-columns: 75% 25%;
+    position: relative;
+}
+
+.section2__priceI {
+    position: absolute;
+    width: 10vw;
+    height: 8vh;
+    top: 5%;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22pt;
+    background-color: var(--bg-transp);
+}
+
+.section2__priceD {
+    position: absolute;
+    width: 10vw;
+    height: 8vh;
+    top: 5%;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22pt;
+    background-color: var(--bg-transp);
+}
+
+.section2__h3 {
+    margin-bottom: 1%;
+    font-size: 22pt;
+}
+
+.fontDown {
+    font-size: 18pt;
+}
+
+.section2__contIngred {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.section2__ul {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section2__contImg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section2__imgI, .section2__imgD {
+    width: 100%;
+}
+
+.section2__imgI:hover {
+    transform: scale(1.1);
+    width: 30%;
+    position: absolute;
+    right: 2%;
+    top: 0;
+    z-index: 100;
+}
+
+.section2__contProdsD {
+    width: 100%;
+    height: 25vh;
+    border: 1px solid var(--bg-color);
+    display: grid;
+    grid-template-columns: 25% 75%;
+    position: relative;
+}
+
+.section2__imgD:hover {
+    transform: scale(1.1);
+    width: 30%;
+    position: absolute;
+    left: 1%;
+    top: 0;
+    z-index: 100;
+}
