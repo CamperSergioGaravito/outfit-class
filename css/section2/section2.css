@@ -12,6 +12,9 @@
     width: 100%;
     height: 90%;
     overflow-y: scroll;
+    overflow-x: hidden;
+    border-bottom: 2px solid var(--bg-color);
+    border-top: 2px solid var(--bg-color);
 }
 
 .section__contCarta::-webkit-scrollbar {
@@ -34,6 +37,7 @@
 .section2__priceI {
     position: absolute;
     width: 10vw;
+    max-width: 15vw;
     height: 8vh;
     top: 5%;
     left: 1%;
@@ -42,6 +46,8 @@
     justify-content: center;
     font-size: 22pt;
     background-color: var(--bg-transp);
+    border-radius: 0 0 15px 15px;
+    border-bottom: 2px solid var(--bg-color);
 }
 
 .section2__priceD {
@@ -55,6 +61,8 @@
     justify-content: center;
     font-size: 22pt;
     background-color: var(--bg-transp);
+    border-radius: 0 0 15px 15px;
+    border-bottom: 2px solid var(--bg-color);
 }
 
 .section2__h3 {

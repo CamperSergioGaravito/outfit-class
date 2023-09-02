@@ -1,0 +1,67 @@
+:root {
+    --bg-color: rgb(153, 0, 0);
+    --bg-transp: rgba(255, 89, 0, 0.616);
+    --bg-scrolltumb: rgb(212, 217, 37);
+}
+
+@media (max-width: 1000px) {
+    .nav__logo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav__icoLogo {
+        width: 40px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .nav__ul {
+        grid-column-start: 3;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__li {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nav__a:hover {
+        border-bottom: 2px solid white;
+    }
+
+    .nav__icon {
+        width: 20%;
+    }
+
+    .nav__a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__h1 {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20t;
+    }
+}

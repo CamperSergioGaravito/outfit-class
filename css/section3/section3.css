@@ -1,0 +1,24 @@
+:root {
+    --bg-color: rgb(153, 0, 0);
+    --bg-transp: rgba(255, 89, 0, 0.616);
+    --bg-scrolltumb: rgb(212, 217, 37);
+    --bg-section3: rgb(212, 217, 37);
+    --font-color: rgb(153, 0, 0);
+}
+
+.section3__h2 {
+    font-size: 24pt;
+}
+
+.section3__h3 {
+    font-size: 18pt;
+}
+
+.section3__p {
+    font-size: 14pt;
+    width: 80%;
+}
+
+.section2__ul {
+    width: 100%;
+}

@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tittle -->
-    <title>Outfit-class</title>
-    <link rel="shortcut icon" href="./assets/iconos/iconoStore.svg" type="image/x-icon">
+    <title>Sabores</title>
+    <link rel="shortcut icon" href="./assets/iconos/logo.png" type="image/x-icon">
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/nav/nav.css">
     <link rel="stylesheet" href="./css/section1/section1.css">
     <link rel="stylesheet" href="./css/section2/section2.css">
+    <link rel="stylesheet" href="./css/section3/section3.css">
+    <link rel="stylesheet" href="./css/footer/footer.css">
+    <link rel="stylesheet" href="./css/indexResp.css">
+    <link rel="stylesheet" href="./css/nav/navResp.css">
+    <link rel="stylesheet" href="./css/section1/section1Resp.css">
+    <link rel="stylesheet" href="./css/section2/section2Resp.css">
+    <link rel="stylesheet" href="./css/section3/section3Resp.css">
 </head>
 <body>
+    <!-- button subir -->
+    <div class="buttonSubir">
+        <a href="#home" class="buttonSubir__btn">
+            <img src="./assets/iconos/logo.png" alt="" class="buttonSubir__img">
+        </a>
+        <a href="#carta" class="buttonSubir__btn">
+            <img src="./assets/iconos/list-box2.svg" alt="" class="buttonSubir__img">
+        </a>
+        <a href="#contacto" class="buttonSubir__btn">
+            <img src="./assets/iconos/chatbubbles.svg" alt="" class="buttonSubir__img">
+        </a>
+    </div>
     <!-- nav -->
-    <nav class="nav">
-        <img src="./assets/iconos/bag-handle-sharp.svg" alt="logo de la tienda" class="nav__icoLogo">
+    <nav class="nav" id="home">
+        <div class="nav__logo">
+            <img src="./assets/iconos/logo.png" alt="logo de la tienda" class="nav__icoLogo">
+            <h1 class="nav__h1">Sabores</h1>
+        </div>
         <ul class="nav__ul">
             <li class="nav__li">
                 <img src="./assets/iconos/home.svg" alt="icono home" class="nav__icon">
@@ -24,21 +46,21 @@
                 </a>
             </li>
             <li class="nav__li">
-                <img src="./assets/iconos/ios-list-box.svg" alt="icono carrito productos" class="nav__icon">
+                <img src="./assets/iconos/list-box.svg" alt="icono carrito productos" class="nav__icon">
                 <a href="#carta" class="nav__a">
                     Productos
                 </a>
             </li>
             <li class="nav__li">
                 <img src="./assets/iconos/storefront.svg" alt="icono store" class="nav__icon">
-                <a href="#" class="nav__a">
+                <a href="#nosotros" class="nav__a">
                     Nosotros
                 </a>
             </li>
             <li class="nav__li">
-                <img src="./assets/iconos/person-circle-outline.svg" alt="" class="nav__icon">
-                <a href="#" class="nav__a">
-                    Login
+                <img src="./assets/iconos/chatbubbles-sharp.svg" alt="" class="nav__icon">
+                <a href="#contacto" class="nav__a">
+                    Contácto
                 </a>
             </li>
         </ul>
@@ -220,13 +242,13 @@
             </div>
             <div class="section2__contProdsD">
                 <div class="section2__priceD">
-                    $20.000
+                    $28.000
                 </div>
                 <div class="section2__contImg">
-                    <img src="./assets/platillos/img1.webp" alt="" class="section2__imgD">
+                    <img src="./assets/platillos/img6.webp" alt="" class="section2__imgD">
                 </div>
                 <div class="section2__contIngred">
-                    <h3 class="section2__h3">Taco loco</h3>
+                    <h3 class="section2__h3">Maracapé</h3>
                     <h3 class="section2__h3 fontDown">Ingredientes</h3>
                     <ul class="section2__ul">
                         <li class="section2__li">Tortillas de maíz</li>
@@ -242,7 +264,7 @@
                     $20.000
                 </div>
                 <div class="section2__contIngred">
-                    <h3 class="section2__h3">Taco loco</h3>
+                    <h3 class="section2__h3">Merlin</h3>
                     <h3 class="section2__h3 fontDown">Ingredientes</h3>
                     <ul class="section2__ul">
                         <li class="section2__li">Tortillas de maíz</li>
@@ -253,18 +275,18 @@
                     </ul>
                 </div>
                 <div class="section2__contImg">
-                    <img src="./assets/platillos/img1.webp" alt="" class="section2__imgI">
+                    <img src="./assets/platillos/img7.webp" alt="" class="section2__imgI">
                 </div>
             </div>
             <div class="section2__contProdsD">
                 <div class="section2__priceD">
-                    $20.000
+                    $35.000
                 </div>
                 <div class="section2__contImg">
-                    <img src="./assets/platillos/img1.webp" alt="" class="section2__imgD">
+                    <img src="./assets/platillos/img8.webp" alt="" class="section2__imgD">
                 </div>
                 <div class="section2__contIngred">
-                    <h3 class="section2__h3">Taco loco</h3>
+                    <h3 class="section2__h3">Flapeo</h3>
                     <h3 class="section2__h3 fontDown">Ingredientes</h3>
                     <ul class="section2__ul">
                         <li class="section2__li">Tortillas de maíz</li>
@@ -277,5 +299,69 @@
             </div>
         </div>
     </section>
+    <!-- section 3 -->
+    <section class="section3" id="nosotros">
+        <h2 class="section3__h2">Nosotros</h2>
+        <h3 class="section3__h3">Bienvenidos a Sabores</h3>
+        <p class="section3__p">
+            En Sabores, creemos en la pasión por la comida deliciosa y la satisfacción de nuestros clientes. Desde nuestro modesto comienzo, hemos crecido hasta convertirnos en un destino de elección para quienes buscan una experiencia gastronómica excepcional en el mundo de la comida rápida y los platillos reconfortantes. Permítanos contarles nuestra historia y lo que representa nuestro restaurante.
+        </p>
+        <h3 class="section3__h3">Nuestra Historia</h3>
+        <p class="section3__p">
+            Fundado en 2023, Sabores ha sido un pilar en la comunidad desde entonces. Nuestro fundador, Lolo, tenía un sueño: llevar los sabores auténticos y reconfortantes a cada rincón de la ciudad. Hoy, seguimos ese sueño con pasión y dedicación, sirviendo platos de calidad que deleitan los paladares de nuestros clientes.
+        </p>
+        <h3 class="section3__h3">Nuestra Filosofía</h3>
+        <p class="section3__p">
+            En Sabores, nos enorgullece ofrecer comida rápida que va más allá de las expectativas. Creemos en la frescura, la calidad y la autenticidad. Utilizamos ingredientes frescos y de primera calidad para crear platos que se destacan en sabor y presentación. Nuestro compromiso con la excelencia nos impulsa a superar los límites de la comida rápida tradicional.
+        </p>
+        <h3 class="section3__h3">Nuestro Menú</h3>
+        <p class="section3__p">
+            Nuestro menú es una mezcla cuidadosamente seleccionada de platillos que abrazan una variedad de gustos y preferencias. Desde hamburguesas gourmet y tacos sabrosos hasta ensaladas frescas y opciones vegetarianas, hay algo para todos en Sabores. Además, estamos comprometidos con la innovación, por lo que siempre estamos buscando nuevas formas de sorprender a nuestros clientes con creaciones emocionantes.
+        </p>
+        <h3 class="section3__h3">Nuestra Comunidad</h3>
+        <p class="section3__p">
+            En Sabores, no solo servimos comida, también construimos relaciones con nuestra comunidad. Apoyamos eventos locales, organizaciones benéficas y actividades que fortalecen los lazos entre nosotros y nuestros vecinos. Creemos en devolver a la comunidad que nos ha apoyado a lo largo de los años.
+        </p>
+        <h3 class="section3__h3">Nuestra Misión</h3>
+        <p class="section3__p">
+            Nuestra misión es simple: crear momentos memorables a través de la comida excepcional y el servicio amable. Queremos ser su elección número uno cuando busque un lugar para comer delicioso, reunirse con amigos y familiares, o simplemente disfrutar de una comida rápida de alta calidad.
+
+            Gracias por visitar Sabores. Esperamos que disfrute de su experiencia con nosotros tanto como nosotros disfrutamos de servirle. ¡Esperamos verlo nuevamente pronto y ser parte de sus momentos especiales!
+        </p>
+        <p class="section3__p">
+            Atentamente,
+            El Equipo de Sabores
+        </p>
+    </section>
+    <!-- section 4 -->
+    <footer class="footer" id="contacto">
+        <h2 class="footer__h2">Contáctate con Sabor</h2>
+        <div class="footer__contInfContact">
+            <div class="footer__contBtns">
+                <a href="https://wa.me/573209333183" class="footer__a">
+                    <img src="./assets/iconos/logo-whatsapp.svg" alt="logo whatsapp" class="footer__img">
+                </a>
+                <p class="footer__p">3209333183</p>
+            </div>
+            <div class="footer__contBtns">
+                <a href="https://www.facebook.com/" class="footer__a">
+                    <img src="./assets/iconos/logo-facebook.svg" alt="logo whatsapp" class="footer__img">
+                </a>
+                <p class="footer__p">Restaurante Sabores</p>
+            </div>
+            <div class="footer__contBtns">
+                <a href="mailto:sabores@sabores.com" class="footer__a">
+                    <img src="./assets/iconos/mail.svg" alt="logo whatsapp" class="footer__img">
+                </a>
+                <p class="footer__p">sabores@sabores.com</p>
+            </div>
+            <div class="footer__contBtns">
+                <a href="tel:3209333183" class="footer__a">
+                    <img src="./assets/iconos/phone-portrait.svg" alt="logo whatsapp" class="footer__img">
+                </a>
+                <p class="footer__p">3209333183</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
